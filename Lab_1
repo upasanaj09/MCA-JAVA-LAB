@@ -1,0 +1,37 @@
+public class test {
+    public static void main(String[] args) {
+        String[] st={"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W"};
+        allot(st);
+
+    }
+
+    public static void allot(String[] st){
+        String[][] room= new String[10][2];
+        int k=0;
+
+        //for room assignment
+        for(int i=0;i<10;i++){
+            for (int j=0;j<2;j++){
+                room[i][j]=st[k];
+                k++;
+            }
+        }
+        
+        //for printing room allocation
+        for(int i=0;i<10;i++){
+            System.out.println("Room no: "+i+1 );
+            for (int j=0;j<2;j++){
+                System.out.print(room[i][j]+" ");
+            }
+            System.out.println(" " );
+        }
+
+        //Student left
+        System.out.println("No room alloted to: "+ st[k]);
+
+        //if more than 1 student left
+        // for(int i=k;i<st.length;i++){
+        //   System.out.println("room not alloted to " + st[i]);
+        // }
+    }
+}
