@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class lab2 {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter a number:");
+        System.out.print("Enter a number:");
         int a=sc.nextInt();
-        System.out.println("Enter another number:");
+        System.out.print("Enter another number:");
         int b=sc.nextInt();
-        System.out.println("Enter the number to perform from following operations: \n 1)Add \t2)Subtract \t3)Multiply \t4)Divide");
+        System.out.print("Enter the number to perform from following operations: \n 1)Add \t2)Subtract \t3)Multiply \t4)Divide");
         int op=sc.nextInt();
         switch (op) {
             case 1:
