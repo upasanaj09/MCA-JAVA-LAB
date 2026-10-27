@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class lab1 {
+public class Lab1 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         String[] female= new String[21];//stores name of females
